@@ -1,7 +1,7 @@
 <project name="zm-charset" default="jar">
 
-  <import file="../zm-zcs/ant-global.xml"/>
-  
+  <import file="ant-global.xml"/>
+
   <target name="jar" depends="compile" description="Creates the jar file">
     <mkdir dir="build/classes/META-INF/services"/>
     <copy todir="build/classes/META-INF/services" file="conf/java.nio.charset.spi.CharsetProvider"/>
